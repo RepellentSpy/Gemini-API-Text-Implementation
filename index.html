@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/gemini.png">
+  <title>Gemini API Access</title>
+</head>
+
+<body background="images/Blueprint_white.svg">
+  <main id="ai_box">
+    <img src="images/gemini.png" id="gemini_icon">
+    <h1 id="main_title">Gemini Text API Access</h1>
+
+    <form>
+      <div class="prompt-box">
+        <label>
+          <input name="prompt" placeholder="Hello!" type="text" value="Hello!" id="input_box">
+        </label>
+        <button type="submit" id="submit_button" class="submit_button">Send</button>
+      </div>
+    </form>
+
+    <p class="output" id="output"></p>
+
+  </main>
+
+  <script type="module" src="main.js"></script>
+
+</body>
+</html>

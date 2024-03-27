@@ -25,7 +25,7 @@ form.onsubmit = async (ev) => {
     // Call the gemini-pro model, and get results
     const genAI = new GoogleGenerativeAI(API_KEY);
     const model = genAI.getGenerativeModel({
-      model: "gemini-pro",
+      model: "gemini-pro", // gemini-pro or gemini-pro-vision
       safetySettings: [
         {
           category: HarmCategory.HARM_CATEGORY_HARASSMENT,
